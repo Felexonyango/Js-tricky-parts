@@ -60,3 +60,32 @@ Products.sort((a,b)=>{
     return a.price -b.price
 })
 console.log(Products)
+
+//InterView Question
+
+
+//median of two sorted arrays that are already sorted
+
+// combine arrays =>sort =>even or odd len =>findMidNumber
+
+ function sortArrays(nums1,nums2){
+     const totalArray =[...nums1, ...nums2].sort((a,b)=> a-b)
+
+     const mp = Math.floor(totalArray.length/2)
+ 
+     if(totalArray %2 !==0){
+
+         return totalArray[mp]
+
+
+     }
+     else{
+        return (totalArray[mp] +totalArray[mp-1])/2
+     }
+
+    }
+
+     const nums1=[1,3,4]
+     const nums2=[2]
+
+     console.log(sortArrays(nums1,nums2))
