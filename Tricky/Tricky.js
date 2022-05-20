@@ -35,15 +35,6 @@ console.log( curriedSum(3)(3)(3) ); //9
 
 
 
-//this key word
-const persons={
-  name:"Felex",
-  sayName:function (){
-    console.log(`my name is ${this.name}`)
-
-  },
-}
-persons.sayName()
 
 function Person(email,age){
   this.email=email,
@@ -52,7 +43,10 @@ function Person(email,age){
  const person1= new Person('Felex@gmail.com',24)
  console.log(person1.email)
 
+
 // order of precedence
+
+
 //Prototypes shares properties across  instances
  Person.prototype.getDetails=function(){
 
@@ -83,13 +77,7 @@ return this.fname + "  " + this.lname
 const man1= new Man('felex', 'onyango')
 console.log(man1.fname, man1.lname)
 
-// ARRAY
 
-const arr=['F','E','L','E','O']
-
-for(const item of arr){
-  console.log(item)
-}
 
 //Normal function
 function normalfunc(){
@@ -126,3 +114,6 @@ function* generateFunction(){
    console.log(nameinput.value)
 
  }
+
+
+ 
