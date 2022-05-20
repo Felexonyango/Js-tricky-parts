@@ -35,7 +35,34 @@ if(this.count == 0) return undefined
 console.log(`Top element in stack is ${this.items[this.count -1]}`)
 
 }
+//ckeck if stack is empty
+isEmpty(){
 
+    console.log(this.count == 0 ? "Stack is empty":"Stack is not empty")
+    return this.count == 0
+}
+
+size(){
+    console.log(` ${ this.count} element is stack`)
+}
+clear(){
+    this.items =[]
+    this.count = 0
+    console.log(`Stack is cleared`)
+    return this.items
+
+}
+
+//Print elemnts in stack
+print(){
+
+    let str=''
+    for(let i=0;i<this.count;i++){
+    str+=this.items[i]  +   ''
+    }
+    return str ;
+
+}
 
 
 }
@@ -45,6 +72,8 @@ stack.push(10)
 stack.push(20) 
 stack.peek()
 stack.push(30)
+console.log(stack.print())
+
 
 
 //removes 50
@@ -52,3 +81,9 @@ stack.pop()
 stack.pop()
 stack.pop()
 console.log(stack.pop())
+console.log(stack.print())
+
+stack.isEmpty()
+stack.size()
+
+stack.clear()
