@@ -16,7 +16,7 @@
  }
 //first element in a queue 
  peek(){
-     
+
  return  this.items[0]
 
  }
@@ -43,3 +43,6 @@ console.log(queue);
 console.log(queue.dequeue());
 
 console.log(queue.peek());
+
+console.log(queue.getSize())
+console.log(queue.isEmpty())
