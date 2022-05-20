@@ -90,6 +90,80 @@ function Person(email,age){
  }
 
  const person1= new Person('Felex@gmail.com',24)
- console.log(person1.email)
+
 
  console.log(person1.getDetails())
+
+ // Question 7
+
+ // difference between functional declaration and functional exppression
+
+ console.log(Func())
+ console.log(Hello())
+
+  function Func(){
+    console.log("Hello")
+  }
+   let Hello =function(){
+
+    console.log("Hello")
+
+   } 
+
+   //Answer
+   //Syntax is difference
+   // Function expression is annonymous function that is saved in a variable
+   //Function expression behaves as a variable and therefore cannot be  
+   // accessed on the top of the function unlike function declaration can be accessed on the top
+
+
+   //Question 8
+
+  //  What is promises and why do we use it
+
+  //To make async calls which has to wait  something to happen  and then when to come back
+  //You execute callback function  and within callback you might do another 
+
+  let myPromise = new Promise(function(myResolve, myReject) {
+    // "Producing Code" (May take some time)
+    
+      myResolve(); // when successful
+      myReject();  // when error
+    });
+    
+    // "Consuming Code" (Must wait for a fulfilled Promise)
+    myPromise.then(
+      function(value) { /* code if successful */ },
+      function(error) { /* code if some error */ }
+    );
+
+     //Question 9
+
+    //SetTimeout
+     
+    setTimeout(()=>{
+     console.log('Interval')
+    },0)
+
+
+     //Question 10
+     //What is closure and how to use it
+
+  // A closure is the combination of a function bundled together (enclosed) with references
+  // to its surrounding state (the lexical environment). 
+
+let a =10;
+
+function outer(){
+  
+  let b =20
+
+  function inner(){
+
+    let c =30
+
+    console.log(a,b,c)
+  }
+  inner()
+}
+outer()
