@@ -17,6 +17,5 @@ function isPrime(n) {
   console.log(isPrime(5));
   console.log(isPrime(6));
   console.log(isPrime(9));
-  console.log(isPrime(11));
-  console.log(isPrime(12));
+
   
