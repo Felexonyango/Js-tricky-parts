@@ -9,11 +9,10 @@ function insertionSort(arr){
          if(arr[j] <arr[j-1]){
 
         
-            //  const temp = arr[j];
-            //  arr[j] = arr[j-1];
-            //  arr[j-1] = temp;
+             const temp = arr[j];
+             arr[j] = arr[j-1];
+             arr[j-1] = temp;
 
-             [arr[j], arr[j-1] = arr[j-1], arr[j]];
 
          }
          else {
