@@ -155,7 +155,7 @@ function Person(email,age){
 let a =10;
 
 function outer(){
-  
+
   let b =20
 
   function inner(){
@@ -167,3 +167,7 @@ function outer(){
   inner()
 }
 outer()
+
+
+//difference between call() and apply()
+//call() pass argument individually while apply() pass arguments as an array
