@@ -6,17 +6,7 @@ async function sendRequest() {
         console.log(data)
     } catch (error) {
         console.log(error)
-    }
-
-// .then((response) => {
-//     console.log("First then");
-//     return response.json();
-// })
-// .catch((err) => {
-//     console.log("Failed")
-// })
-// .then(function(data) {
-//     console.log(data)
+    }     console.log(data)
 
 }
 sendRequest();
